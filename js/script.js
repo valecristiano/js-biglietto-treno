@@ -16,7 +16,7 @@ let minimo = 18;
 let massimo = 64;
 
 if (età >= minimo && età <= massimo) {
-  alert(`Il prezzo del biglietto è ${prezzoPieno}`);
+  alert(`Il prezzo del biglietto è ${prezzoPieno.toFixed(2)} €`);
 }
 
 // -20% per minore di 18 anni: se età è minore di 18 = prezzoJunior
@@ -25,7 +25,7 @@ let prezzoJunior = prezzoPieno - (prezzoPieno * 20) / 100;
 console.log(prezzoJunior);
 
 if (età < 18) {
-  alert(`Il prezzo del biglietto è ${prezzoJunior}`);
+  alert(`Il prezzo del biglietto è ${prezzoJunior.toFixed(2)} €`);
 }
 
 // -40% per > di 65 anni: se età è maggiore di 65 = prezzoSenior
@@ -33,6 +33,6 @@ if (età < 18) {
 let prezzoSenior = prezzoPieno - (prezzoPieno * 40) / 100;
 console.log(prezzoSenior);
 
-if (età > 65) {
-  alert(`Il prezzo del biglietto è ${prezzoSenior}`);
+if (età > 64) {
+  alert(`Il prezzo del biglietto è ${prezzoSenior.toFixed(2)} €`);
 }

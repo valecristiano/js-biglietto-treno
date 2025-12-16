@@ -1,12 +1,12 @@
 // Quanti km percorrerai?
 
-const kilometri = prompt("Quanti kilometri percorrerai?");
-console.log(kilometri);
+const kilometri = parseInt(prompt("Quanti kilometri percorrerai?"));
+console.log(kilometri, typeof kilometri);
 
 // Quanti anni hai?
 
-const età = prompt("Quanti anni hai?");
-console.log(età);
+const età = parseInt(prompt("Quanti anni hai?"));
+console.log(età, typeof età);
 
 // prezzo biglietto 0.21 * km: se età compresa tra 18 e 64 = prezzoPieno
 
